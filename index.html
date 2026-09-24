@@ -133,22 +133,26 @@
         }
 
         .onboarding-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 20px;
-            padding: 24px;
-            width: 100%;
-            max-width: 480px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-            max-height: 90vh;
-            overflow-y: auto;
-        }
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 24px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    max-height: 90vh;
+    overflow-y: auto;
+    box-sizing: border-box; /* Yeh add karna zaroori hai */
+}
 
-        .onboarding-card h2 {
-            color: var(--text-main);
-            font-size: 1.5rem;
-            margin-bottom: 6px;
-        }
+.onboarding-card h2 {
+    color: var(--text-main) !important;
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+    word-break: break-word; /* Text cut hone se bachayega */
+    display: block !important;
+    visibility: visible !important;
+}
 
         .onboarding-card p {
             font-size: 0.85rem;
